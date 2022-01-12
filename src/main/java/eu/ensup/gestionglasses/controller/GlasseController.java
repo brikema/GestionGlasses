@@ -5,9 +5,7 @@ import eu.ensup.gestionglasses.domain.Glasse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -27,5 +25,17 @@ public class GlasseController {
         List<Glasse> listGlasses = iGlasseDao.findAll();
         model.addAttribute("listGlasses", listGlasses);
         return "list";
+    }
+
+    @GetMapping("/new")
+    public String viewGlasses(Model model) {
+        model.addAttribute("glasse", new Glasse());
+        return "new";
+    }
+
+    @PostMapping("/glasses/save")
+    public String saveGlasses(@ModelAttribute Glasse glasse) {
+        iGlasseDao.save(glasse);
+        return "redirect:/glasses/list";
     }
 }

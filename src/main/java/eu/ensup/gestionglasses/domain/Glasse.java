@@ -16,7 +16,7 @@ public class Glasse {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    private int  reference;
+    private int reference;
     private String label;
     private Double price;
 }

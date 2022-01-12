@@ -6,10 +6,11 @@
     <title>Title</title>
 </head>
 <body>
-<h1>Liste des lunettes</h1>
-<tr th:each="glasses : ${listGlasses}">
-    <td th:text="${glasses.id}"></td>
-    <td th:text="${glasses.label}"></td>
-</tr>
+<a href="/glasses/new">Nouvelles lunettes</a>
+    <h1>Liste des lunettes</h1>
+
+    <th:block th:each="glasses : ${listGlasses}">
+        <p><span th:text="${glasses.label}"></span> | Référence n° <span th:text="${glasses.reference}"></span> | <span th:text="${glasses.price}"></span> €</p>
+    </th:block>
 </body>
 </html>

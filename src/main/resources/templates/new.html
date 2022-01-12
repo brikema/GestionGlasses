@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<a href="/glasses/list">Liste des lunettes</a>
+<h1>Nouvelle lunettes</h1>
+
+<form action="#" th:action="@{glasses/save}" th:object="${glasse}" method="post">
+  <input class="music_input" placeholder="Titre" type="text" th:field="*{label}"/>
+  <input class="music_input" placeholder="Prix" th:field="*{price}"/>
+  <input class="music_input" placeholder="Référence" type="number" th:field="*{reference}"/>
+  <input class="music_button" type="submit" value="Enregistrer"/>
+</form>
+
+</body>
+</html>
