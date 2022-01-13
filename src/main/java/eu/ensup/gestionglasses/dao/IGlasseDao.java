@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface IGlasseDao extends JpaRepository<Glasse, Integer> {
     public List<Glasse> findAll();
+
 }

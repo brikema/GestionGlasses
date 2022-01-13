@@ -3,18 +3,66 @@
       xmlns:th="http://thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
+  <title>Gestion Glasses - Ajouter un paire</title>
+  <!-- Google Fonts for the fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <!-- Font Awesome for the icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
+  <link th:href="@{/assets/styles.css}" rel="stylesheet"/>
 </head>
 <body>
-<a href="/glasses/list">Liste des lunettes</a>
-<h1>Nouvelle lunettes</h1>
-
-<form action="#" th:action="@{glasses/save}" th:object="${glasse}" method="post">
-  <input class="music_input" placeholder="Titre" type="text" th:field="*{label}"/>
-  <input class="music_input" placeholder="Prix" th:field="*{price}"/>
-  <input class="music_input" placeholder="Référence" type="number" th:field="*{reference}"/>
-  <input class="music_button" type="submit" value="Enregistrer"/>
-</form>
+  <header>
+    <nav class="navbar-music">
+      <div>
+        <a class="navbar-music_logo" href="/">
+          <span class="navbar-music_logo--basic">Gestion Glasses</span>
+        </a>
+      </div>
+      <div>
+        <a class="navbar-music_link" href="/glasses/list"><span>Liste des lunettes</span></a>
+        <a class="navbar-music_link" href="/glasses/new"><span>Ajouter une paire</span></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="main_grid_left-marge"></div>
+    <div class="main_grid_right-marge"></div>
+      <div class="main_grid_main-content">
+        <div class="_row">
+          <div class="_col-12">
+            <h1 class="title-secondary-main">Ajouter une paire</h1>
+          </div>
+          <form class="_row" action="#" th:action="@{glasses/save}" th:object="${glasse}" method="post">
+            <div class="form-java_container _row _col-12 _col-sm-12">
+              <label class="form-java_label _col-12">Nom de la paire</label>
+              <input type="text" class="form-java_input _col-12" th:field="*{label}">
+            </div>
+            <div class="form-java_container _row _col-6 _col-sm-12">
+              <label class="form-java_label _col-12">Prix de la paire</label>
+              <input type="text" class="form-java_input _col-12" th:field="*{price}">
+            </div>
+            <div class="form-java_container _row _col-6 _col-sm-12">
+              <label class="form-java_label _col-12">Référence</label>
+              <input type="text" class="form-java_input _col-12" th:field="*{reference}">
+            </div>
+            <div class="_col-12">
+              <button class="button-square button--big" type="submit" value="Enregistrer">Ajouter</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  </main>
+  <footer>
+    <div class="_row">
+      <div class="_col-12">
+        <a class="link-normal" href="https://github.com/asemin08/GestionGlasses" target="_blank"><i class="fab fa-github"></i> - Github du projet</a>
+      </div>
+      <div class="_col-12">
+        <span><i class="far fa-copyright"></i> Allan Semin & Brice Martineau</span>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>

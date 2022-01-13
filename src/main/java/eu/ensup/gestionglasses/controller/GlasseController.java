@@ -38,4 +38,18 @@ public class GlasseController {
         iGlasseDao.save(glasse);
         return "redirect:/glasses/list";
     }
+
+    @RequestMapping(value = "/{id}", method= RequestMethod.GET)
+    public String getGlasses(Model model, @PathVariable("id") Integer id) {
+        Glasse glasses = iGlasseDao.getById(id);
+        model.addAttribute("theGlasses", glasses);
+        return "glasses";
+    }
+
+    @RequestMapping("/delete/{id}")
+    public String deleteGlasses(@PathVariable(name = "id") Integer id) {
+        iGlasseDao.deleteById(id);
+        return "redirect:/glasses/list";
+    }
+
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion Glasses - Ajouter un paire</title>
+    <!-- Google Fonts for the fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <!-- Font Awesome for the icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css">
+    <link th:href="@{/assets/styles.css}" rel="stylesheet"/>
+</head>
+<body>
+<header>
+    <nav class="navbar-music">
+        <div>
+            <a class="navbar-music_logo" href="/">
+                <span class="navbar-music_logo--basic">Gestion Glasses</span>
+            </a>
+        </div>
+        <div>
+            <a class="navbar-music_link" href="/glasses/list"><span>Liste des lunettes</span></a>
+            <a class="navbar-music_link" href="/glasses/new"><span>Ajouter une paire</span></a>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="main_grid_left-marge"></div>
+    <div class="main_grid_right-marge"></div>
+    <div class="main_grid_main-content">
+        <div class="_row" th:each="glasses : ${theGlasses}">
+            <div class="_col-12">
+                <h1 class="title-secondary-main" th:text="${theGlasses.label}"></h1>
+            </div>
+            <th:block class="_col-12">
+                <p class="_col-12">Prix: <span th:text="${theGlasses.price}"></span> €</p>
+                <p class="_col-12">Référence: <span th:text="${theGlasses.reference}"></span></p>
+            </th:block>
+            <br>
+            <div class="_col-12">
+                <a th:href="@{/glasses/delete/{id}(id=${glasses.id})}" class="button-square-reverse" type="submit" value="Enregistrer">Supprimer cette paire</a>
+            </div>
+            <br>
+            <div class="_col-12">
+                <a href="/glasses/list" class="link-normal"><i class="fas fa-arrow-left"></i> Retour à la liste</a>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="_row">
+        <div class="_col-12">
+            <a class="link-normal" href="https://github.com/asemin08/GestionGlasses" target="_blank"><i class="fab fa-github"></i> - Github du projet</a>
+        </div>
+        <div class="_col-12">
+            <span><i class="far fa-copyright"></i> Allan Semin & Brice Martineau</span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
