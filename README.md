@@ -12,8 +12,17 @@ Ce projet à été réalisé dans le cadre d'une formation à l'ENSUP. Cette for
 * Avoir docker-compose
 * Récupérer le code source
 * Ce placer à la racine du projet
-* lancer le conteneur de la base de données : 
+* Lancer le conteneur de la base de données : 
 ```docker-compose up -d docker-mysql```
+* Lancer le conteneur de l'application et phpmyadmin:
+```docker-compose up -d```
+* Ouvrir un navigateur est-ce rendre à cette url pour accéder l'application: [http://localhost:8080/](http://localhost:8080/)
+* Pour ce rendre sur phpmyadmin : [http://localhost:8081/](http://localhost:8081/)
+
+---
+## Lien vers le dockerhub de l'image de l'application
+
+[image docker du projet](https://hub.docker.com/r/verkeur08/gestionglasses)
 
 ---
 ## Liste des projets
