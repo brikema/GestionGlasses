@@ -13,7 +13,7 @@ Ce projet à été réalisé dans le cadre d'une formation à l'ENSUP. Cette for
 * Récupérer le code source
 * Ce placer à la racine du projet
 * lancer le conteneur de la base de données : 
-    docker-compose up -d docker-mysql
+```docker-compose up -d docker-mysql```
 
 ---
 ## Liste des projets
