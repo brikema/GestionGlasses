@@ -1,5 +1,20 @@
 # GestionGlasses
-spring boot
+---
+## Projet
+
+Application qui permet à un opticien de gérer son stock de lunettes.
+
+Ce projet à été réalisé dans le cadre d'une formation à l'ENSUP. Cette formation avait pour objectif la découverte de Spring et Spring Framework.
+
+---
+## Prérequis pour lancer l'application
+* Avoir docker
+* Avoir docker-compose
+* Récupérer le code source
+* Ce placer à la racine du projet
+* lancer le conteneur de la base de données : 
+    docker-compose up -d docker-mysql
+
 ---
 ## Liste des projets
 
