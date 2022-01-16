@@ -26,7 +26,10 @@ services:
   spring:
     container_name: springapp
     restart: always
-    image: verkeur08/gestionglasses:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    #image: verkeur08/gestionglasses:latest
     ports:
       - "8080:8080"
     environment:
