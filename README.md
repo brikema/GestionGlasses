@@ -23,8 +23,8 @@ Ce projet à été réalisé dans le cadre d'une formation à l'ENSUP. Cette for
 ```docker-compose up -d docker-mysql```
 * Lancer le conteneur de l'application et phpmyadmin:
 ```docker-compose up -d```
-* Ouvrir un navigateur est-ce rendre à cette url pour accéder l'application: [http://localhost:8080/](http://localhost:8080/)
-* Pour ce rendre sur phpmyadmin : [http://localhost:8081/](http://localhost:8081/)
+* Ouvrir un navigateur et se rendre à cette url pour accéder l'application: [http://localhost:8080/](http://localhost:8080/)
+* Pour se rendre sur phpmyadmin : [http://localhost:8081/](http://localhost:8081/)
 
 ---
 ## Lien vers le dockerhub de l'image de l'application
@@ -36,7 +36,7 @@ Ce projet à été réalisé dans le cadre d'une formation à l'ENSUP. Cette for
 
 Nom du projet | Description | Lien
 ---|---|----
-GestionGlasses | Il s'agit du projet contenant notre application avec son code source, son dockerfile et un script docker-compose | [GestionGlasses](https://github.com/brikema/GestionGlasses)
-GestionGlasses-role | Il s'agit du projet contenant notre rôle Ansible | [RoleAnsible](https://github.com/asemin08/GestionGlasses-role)
-GestionGlasses-playground | Il s'agit du projet contenant notre playground Ansible | [PlaygroundAnsible](https://github.com/asemin08/GestionGlasses-playground)
-GestionGlasses-terraform | Il s'agit du projet contenant notre script Terraform pour déployer l'application GestionGlasses | [Terraform](https://github.com/asemin08/GestionGlasses-terraform)
+GestionGlasses | Projet contenant notre application avec son code source, son dockerfile et un script docker-compose | [GestionGlasses](https://github.com/brikema/GestionGlasses)
+GestionGlasses-role | Projet contenant notre rôle Ansible | [RoleAnsible](https://github.com/asemin08/GestionGlasses-role)
+GestionGlasses-playground | Projet contenant notre playground Ansible | [PlaygroundAnsible](https://github.com/asemin08/GestionGlasses-playground)
+GestionGlasses-terraform | Projet contenant notre script Terraform pour déployer l'application GestionGlasses | [Terraform](https://github.com/asemin08/GestionGlasses-terraform)
