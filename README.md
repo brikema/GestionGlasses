@@ -8,7 +8,7 @@ Ce projet à été réalisé dans le cadre d'une formation à l'ENSUP. Cette for
 
 ---
 
-## Lien vers github pour le déploiement sur AWS de l'application
+## Lien vers le github pour le déploiement sur AWS de l'application
 
 [Projet avec déploiement sur AWS](https://github.com/asemin08/GestionGlasses-terraform)
 
