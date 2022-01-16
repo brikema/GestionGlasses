@@ -7,6 +7,13 @@ Application qui permet à un opticien de gérer son stock de lunettes.
 Ce projet à été réalisé dans le cadre d'une formation à l'ENSUP. Cette formation avait pour objectif la découverte de Spring et Spring Framework.
 
 ---
+
+## Lien vers github pour le déploiement sur AWS de l'application
+
+[Projet avec déploiement sur AWS](https://github.com/asemin08/GestionGlasses-terraform)
+
+---
+
 ## Prérequis pour lancer l'application
 * Avoir docker
 * Avoir docker-compose
