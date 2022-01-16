@@ -52,4 +52,9 @@ public class GlasseController {
         return "redirect:/glasses/list";
     }
 
+    @RequestMapping("/error")
+    public String handleError() {
+        return "error";
+    }
+
 }
