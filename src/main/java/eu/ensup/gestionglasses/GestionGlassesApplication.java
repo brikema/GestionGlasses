@@ -13,7 +13,7 @@ public class GestionGlassesApplication {
 
 	@GetMapping("/")
 	String home() {
-		return "redirect:/glasses/list";
+		return "redirect:/accueil";
 	}
 
 	public static void main(String[] args) {

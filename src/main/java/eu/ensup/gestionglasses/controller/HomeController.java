@@ -22,11 +22,11 @@ public class HomeController {
         this.iGlasseDao = IGlasseDao;
     }
 
-    @RequestMapping(value = "/list", method= RequestMethod.GET)
+    @RequestMapping(value = "/accueil", method= RequestMethod.GET)
     public String listOfGlasses(Model model){
         List<Glasse> listGlasses = iGlasseDao.findAll();
         model.addAttribute("listGlasses", listGlasses);
-        return "list";
+        return "accueil";
     }
 
     @GetMapping("login")
